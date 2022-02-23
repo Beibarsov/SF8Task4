@@ -6,6 +6,10 @@ namespace FinalTask
     {
         public static void Main(string[] args)
         {
+            try
+            {
+
+
             List<string> Group = new List<string>();
             Student[] Students;
             string path = @"H:\Downloads\Students.dat";
@@ -55,6 +59,10 @@ namespace FinalTask
                     }
 
                 }
+                }
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex);
             }
 
 
